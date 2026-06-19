@@ -1,0 +1,75 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Farmer {
+  id           Int      @id @default(autoincrement())
+  name         String
+  mobile       String
+  state        String
+  district     String
+  village      String
+  fruitType    String
+  quantity     String
+  harvestDate  DateTime
+  photoUrl     String?
+  createdAt    DateTime @default(now())
+}
+
+model Buyer {
+  id             Int      @id @default(autoincrement())
+  companyName    String
+  contactPerson  String
+  country        String
+  email          String
+  mobile         String
+  fruitRequired  String
+  quantity       String
+  destinationPort String
+  message        String?
+  createdAt      DateTime @default(now())
+}
+
+model Product {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  description String
+  imageUrl    String
+  category    String
+  createdAt   DateTime @default(now())
+}
+
+model GalleryItem {
+  id        Int      @id @default(autoincrement())
+  title     String
+  imageUrl  String
+  category  String
+  createdAt DateTime @default(now())
+}
+
+model Testimonial {
+  id        Int      @id @default(autoincrement())
+  name      String
+  role      String
+  quote     String
+  createdAt DateTime @default(now())
+}
+
+model ContactMessage {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model AdminUser {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+}
