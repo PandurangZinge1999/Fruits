@@ -5,6 +5,6 @@ export async function POST(request: Request) {
 
   return NextResponse.json({
     success: true,
-    message: `Buyer inquiry received for ${payload.companyName || "your company"}. The details will be forwarded to ganesgbhanwase73@gmail.com.`,
+    message: `Buyer inquiry received for ${payload.companyName || "your company"}. The details will be forwarded to ganeshbhanwase73@gmail.com.`,
   });
 }

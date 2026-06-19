@@ -3,7 +3,7 @@ export const company = {
   tagline: "Fruit Supplier & Exporter",
   address: "Shiral (Tembhurni), Taluka: Madha, District: Solapur, Maharashtra, India",
   phone: "+91 9766082155",
-  email: "ganesgbhanwase73@gmail.com",
+  email: "ganeshbhanwase73@gmail.com",
   whatsapp: "+919766082155",
   mapUrl: "https://www.google.com/maps?q=Shiral+Tembhurni,+Madha,+Solapur,+Maharashtra,+India",
 };

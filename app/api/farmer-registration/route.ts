@@ -5,6 +5,6 @@ export async function POST(request: Request) {
 
   return NextResponse.json({
     success: true,
-    message: `Farmer registration received for ${payload.farmerName || "a new partner"}. Our team will review it and contact you at ganesgbhanwase73@gmail.com.`,
+    message: `Farmer registration received for ${payload.farmerName || "a new partner"}. Our team will review it and contact you at ganeshbhanwase73@gmail.com.`,
   });
 }

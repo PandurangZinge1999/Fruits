@@ -5,6 +5,6 @@ export async function POST(request: Request) {
 
   return NextResponse.json({
     success: true,
-    message: `Thank you ${payload.name || "there"}, your inquiry has been received and will be sent to ganesgbhanwase73@gmail.com.`,
+    message: `Thank you ${payload.name || "there"}, your inquiry has been received and will be sent to ganeshbhanwase73@gmail.com.`,
   });
 }
